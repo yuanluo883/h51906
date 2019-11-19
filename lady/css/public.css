@@ -1,0 +1,238 @@
+
+.logo{
+	width: 151px;
+}
+.header_r{
+	padding: 17px 0 21px;
+}
+.header_r>div{
+	text-align: right;
+}
+/*搜索框*/
+.search{
+	display: inline-block;
+	padding: 0 10px;
+	border: 1px solid #333;
+	border-radius: 10px;
+}
+.search>input,.search>img{
+	float: left;
+	height: 23px;
+}
+.search>img{
+	width: 17px;
+}
+.search>input{
+	width: 180px;
+}
+/*登录注册*/
+.login{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 33px;
+}
+/*导航条*/
+.nav li{
+	float: left;
+	margin: 26px 29px 0;
+}
+.nav li:last-child{
+	margin-right: 0;
+}
+.nav li a{
+	padding-bottom:8px;
+}
+.nav .active a,.nav li a:hover{
+	border-bottom: 2px solid #830a13;
+}
+/*轮播图*/
+.banner>img{
+	opacity: 0;
+}
+.banner{
+	position: relative;
+}
+.banner_img img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 1s; 
+}
+.banner>button{
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	color: #fff;
+	font-size: 30px;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+}
+.banner>button:first-of-type{
+	animation: leftgo 3s infinite linear;
+}
+.banner>button:last-of-type{
+	animation: rightgo 3s infinite linear;
+}
+.bannerBtn{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+    text-align: center;
+}
+.bannerBtn li{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: 0 10px;
+	border-radius: 6px;
+	cursor: pointer;
+	background: rgba(255,255,255,.5);
+	transition: width 1s ease; 
+	text-indent: -9999em;
+}
+.bannerBtn li:hover{
+	background: rgba(0,0,0,.5);
+}
+.bannerBtn li.active{
+	width:60px;
+	background: rgba(255,255,255,.9);
+}
+img.active{
+	opacity: 1;
+}
+@keyframes leftgo{
+	from{left: 100px;opacity: 1;}
+	to{left: 30px;opacity: 0;}
+}
+@keyframes rightgo{
+	from{right: 100px;opacity: 1;}
+	to{right: 30px;opacity: 0;}
+}
+/*底部*/
+footer{
+	height: 92px;
+	background: #666;
+	text-align: center;
+	line-height: 92px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.mains{
+	margin-top: 28px;
+	margin-bottom: 18px;
+}
+.mains>h4{
+	text-align: right;
+	font-size: 12px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #666;
+}
+.mains>h4>a:first-child{
+	color: #333;
+}
+.mains>h4>a{
+	color: #666;
+	margin-left: 13px;
+}
+.mains>h4>a:last-child{
+	color: #870813;
+}
+.title{
+	width: 116px;
+	height: 40px;
+	border: 1px solid #666;
+	border-top: transparent;
+	position: relative;
+}
+.title>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+	color: #323232;
+	font-size: 22px;
+}
+.title em:first-of-type{
+	width: 1px;
+	height: 14px;
+	background: #fff;
+	position: absolute;
+	left: -1px;
+	top: 20px;
+}
+.title em:last-of-type{
+	width: 1px;
+	height: 18px;
+	background: #fff;
+	position: absolute;
+	right: -1px;
+	top: 0px;
+}
+.xnav{
+	width: 120px;
+	position: relative;
+	border-left: 1px solid #666;
+	font-weight: bold;
+	padding: 1px 0;
+}
+.xnav em{
+	width: 1px;
+	height: 9px;
+	position: absolute;
+	left: -1px;
+	top: 4px;
+	background: #fff;
+}
+.xnav>li{
+	text-align: left;
+	margin: 23px 0px;
+	padding-left:5px ;
+	position: relative;
+	font-size: 17px;
+	cursor: pointer;
+}
+.xnav>li>img{
+	width: 9px;
+	height: 14px;
+	position: absolute;
+	left: -5px;
+	top: 50%;
+	margin-top: -7px;
+	opacity: 0;
+	transition: all 1s;
+}
+li.active{
+	color: #870914;
+}
+li.active>img{
+	opacity: 1;
+}
+.xnav>ul{
+	height: 0;
+	overflow: hidden;
+	transition: all 1s;
+}
+ul.lss{
+	height: auto;
+}
+.xnav>ul>li{
+	margin: 10px 0;
+	margin-left: 9px;
+	padding-bottom:6px;
+	text-align: left;
+	font-size: 14px;
+	cursor: pointer;
+	border-bottom: 1px solid transparents;
+}
+
+.lsli{
+	color: #820912;
+	border-bottom: 1px solid #999;
+}

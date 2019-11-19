@@ -1,0 +1,122 @@
+.basemain{
+	width: 840px;
+	border: 1px solid #666;
+	position: relative;
+	margin-top: 66px;
+    padding-bottom: 25px;
+}
+.basemain>div{
+	display: none;
+}
+.basemain>div>div{
+	display: none;
+}
+div.baseon{
+	display: block;
+}
+.basemain>div>div.active{
+	display: block;
+}
+.basemain>div>div>img:last-of-type{
+	width: 242px;
+	opacity: 0;
+	height: 345px;
+}
+.basemain>div>div>img:first-of-type{
+	position: absolute;
+	width: 242px;
+	height: 345px;
+	top: -34px;
+	left: -46px;
+	z-index: 2;
+}
+.basemain>div>div>div:first-of-type{
+	position: absolute;
+	width: 242px;
+	height: 358px;
+	background: #666;
+	top: -18px;
+	left: -20px;
+}
+.basetxt{
+	width: 597px;
+	position: relative;
+}
+.basetitle{
+	width: 196px;
+	height: 44px;
+	background: #fff;
+	border:1px solid #666;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left: -98px;
+	text-align: center;
+	line-height: 55px;
+	font-size: 11px;
+}
+.basetitle>h2{
+	text-align: center;
+	width: 145px;
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	background: #fff;
+	margin-left: -70px;
+	font-size: 22px;
+	line-height: 22px;
+}
+.basetxt>p{
+	font-size: 14px;
+	margin-bottom: 30px;
+	line-height: 23px;
+	color: #656565;
+	padding-right: 18px;
+	text-align: justify;
+}
+.basetxt>p:first-of-type{
+	margin-top: 44px;
+}
+/*下面的轮播图*/
+.bannershow{
+	margin-top: 54px;
+}
+.bannershow>a{
+	display: inline-block;
+	width: 30px;
+	height: 100%;
+	font-size: 45px;
+}
+.showbox{
+	width: 865px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+}
+.show>li{
+	float: left;
+	width: 260px;
+	position: relative;
+	margin: 12px;
+	transition: all 1s;
+}
+.show>li div{
+	width: 260px;
+	height: 58px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	text-align: center;
+	line-height: 58px;
+	font-size: 12px;
+	transition: all 1s;
+	background: rgb(224,24,37,.5);
+	opacity: 0;
+}
+.show>li:hover div{
+	opacity: 1;
+}
+.show>li:hover{
+	transform: scale(1.1);
+}

@@ -1,0 +1,70 @@
+.photosmain{
+	width: 1000px;
+	float: right;
+	background: #b13537;
+}
+.photosmain>div{
+	width: 540px;
+	float: left;
+	padding: 20px;
+}
+.photosmain>div>h4{
+	display: inline-block;
+	padding-bottom: 10px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid #b13537;
+	color: #fff;
+}
+.photosmain>img{
+	width: 400px;
+	float: left;
+	position: relative;
+	top:-20px;
+	left:-20px;
+	margin-left: 20px;
+}
+.photosmain>div>h4>span:first-child{
+	font-size: 17px;
+}
+.photosmain>div>h4>span:last-child{
+	font-size: 11px;
+}
+.photosmain>div>p{
+	margin-bottom: 24px;
+	font-size: 14px;
+	color: #fff;
+	text-align: justify;
+}
+.mainphot>div{
+	width: 30%;
+	display: inline-block;
+	position: relative;
+}
+.mainphot>div>div{
+	width: 280px;
+	height: 60px;
+	background: rgba(255,0,0,.5);
+	position: absolute;
+	left: 0;
+	top: 240px;
+	color: #fff;
+	padding: 20px 10px;
+	text-align: center;
+	opacity: 0;
+	transition: all 1s;
+}
+.mainphot>div:hover>div{
+	opacity: 1;
+}
+.mainphot>div>p{
+	text-align: center;
+	margin: 10px 0;
+}
+.photoscount>div{
+	display: none;
+}
+.photoscount div.photosmain{
+	display: block;
+}
+
+
